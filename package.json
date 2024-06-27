@@ -2,12 +2,12 @@
   "name": "daily-diet-api--",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": { "node": "18"},
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "knex": "node --import tsx ./node_modules/knex/bin/cli.js",
     "test": "vitest",
     "build": "tsup src --out-dir build"
-
   },
   "keywords": [],
   "author": "",
@@ -25,6 +25,7 @@
     "@fastify/cookie": "^9.3.1",
     "fastify": "^4.28.0",
     "knex": "^3.1.0",
+    "pg": "^8.12.0",
     "sqlite": "^5.1.1",
     "sqlite3": "^5.1.7",
     "zod": "^3.23.8"
